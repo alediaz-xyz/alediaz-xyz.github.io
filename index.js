@@ -90,7 +90,7 @@ const expansorESP8266= new Proyectos(
     Este sistema de expansión permite el desarrollo de proyectos más complejos y versátiles.
     `,
     {'arduino':'./svg/arduino'},
-    'https://eltallerdealexdevrep.com/category/electronica/expansor-i-o-esp8266/',
+    'https://alediaz.xyz/category/electronica/expansor-i-o-esp8266/',
 )
 const paletizador= new Proyectos(
     'Paletizador de cajas',
@@ -103,7 +103,7 @@ const paletizador= new Proyectos(
     Este proyecto evidencia mi habilidad en la automatización industrial, programación en lenguaje Ladder y uso de herramientas avanzadas para la simulación y control de procesos industriales.
     `,
     {'OpenPLC':'./svg/openPLC','factory I/O':'./svg/FactoryIO'},
-    'https://eltallerdealexdevrep.com/paletizador-de-cajas-con-factory-io/',
+    'https://alediaz.xyz/paletizador-de-cajas-con-factory-io/',
 )
 const blogWordpress= new Proyectos(
     'Blog sobre electrónica y Programación',
@@ -117,36 +117,22 @@ const blogWordpress= new Proyectos(
     ¡Únete y descubre todo lo que puedes lograr con la electrónica y la programación!
     `,
     {'WordPress':'./svg/wordpress','mySQL':'./svg/mysql','php':'./svg/php'},
-    'https://eltallerdealexdevrep.com/',
+    'https://alediaz.xyz/',
 )
-const kicadCrud= new Proyectos(
-    'CRUD de footprints y modelos 3D para KiCaD',
-    '',
+const dtvurquiza= new Proyectos(
+    'Sitio web oficial de DTV Urquiza',
+    './imagenes/Captura-desde-2025-04-26-12-19-42.webp',
     `
-    Aplicación CRUD con Laravel para gestionar rutas de huellas y modelos 3D de componentes para KiCad.
-    La aplicación permite a los usuarios almacenar, actualizar, visualizar y eliminar registros de huellas de PCB y sus correspondientes modelos 3D, 
-    facilitando la organización y acceso a estos recursos.
-    Además, la interfaz intuitiva y funcionalidad robusta de la aplicación garantizan una experiencia de usuario fluida y eficiente. 
-    Este proyecto demuestra mi capacidad para construir aplicaciones web complejas y mi habilidad en la utilización de Laravel 
-    para resolver problemas específicos en el ámbito del diseño electrónico.
+    Sitio web oficial de la empresa de reparación de equipos electrónicos DTV Urquiza.
+    Este sitio web fue diseñado y desarrollado utilizando WordPress, PHP y bootstrap, principalmente.
+    Se trata de una web responsive y moderna que permite a los usuarios acceder a información sobre los servicios ofrecidos,
+    además de facilitar la comunicación con la empresa a través de Whatsapp y correo electrónico.
     `,
-    {'mySQL':'./svg/mysql','bootstrap':'./svg/bootstrap','laravel':'./svg/laravel-svgrepo-com'},
-    'https://github.com/alexdevrep',
+    {'WordPress':'./svg/wordpress','bootstrap':'./svg/bootstrap','PHP':'./svg/php'},
+    'https://dtvurquiza.com/',
 )
-const atajosTeclado= new Proyectos(
-    'Atajos de teclado personalizados',
-    '',
-    `
-    He desarrollado un proyecto open source utilizando FastAPI que permite a los usuarios crear y gestionar atajos de teclado personalizados. 
-    El teclado está controlado por un microcontrolador programado en C/C++ que se comunica con la computadora mediante el protocolo I2C.
-    Esta aplicación facilita la configuración de combinaciones de teclas para realizar diversas acciones de manera rápida y eficiente. 
-    Con una interfaz intuitiva y un backend robusto, los usuarios pueden definir, modificar y eliminar atajos de teclado según sus necesidades. 
-    Este proyecto demuestra mi habilidad en el uso de FastAPI para construir aplicaciones web modernas,
-    mi habilidad para la programación de sistemas embebidos y mi compromiso con la creación de herramientas útiles y accesibles para mejorar la productividad.
-    `,
-    {'arduino':'./svg/arduino','fastAPI':'./svg/fastapi-svgrepo-com'},
-    'https://github.com/alexdevrep',
-)
+
+/*
 const portatil= new Proyectos(
     'Mi propio ordenador Portátil',
     '',
@@ -159,10 +145,10 @@ const portatil= new Proyectos(
     `,
     {'arduino':'./svg/arduino','linux':'./svg/linux'},
     'https://github.com/alexdevrep',
-)
+)*/
 
 //Array para las instancias
-const listaProyectos=[expansorESP8266,kicadCrud,blogWordpress,portatil,paletizador,atajosTeclado,]
+const listaProyectos=[expansorESP8266,dtvurquiza,blogWordpress,paletizador]
 //Botón para ver los proyectos 
 $(document).ready(() => {
     $('.card').click(function(event) {
@@ -192,7 +178,7 @@ $(document).ready(() => {
                                 <hr>
                                 <div class="container-fluid d-flex botones" style="display:flex; justify-content:center; align-items:center; padding-top:1.4rem">
                                     <a href="${proyecto.getEnlaces()}" target="_blank" class="btn btn-secondary bg-dark btn-sm ">
-                                        Ver documentación
+                                        Ver Proyecto
                                     </a>
                                     <span style="width:1rem;"></span>
                                     <button class="btn btn-secondary bg-dark btn-sm" onclick="closeModal()">Cerrar proyecto</button>                       
@@ -239,7 +225,7 @@ $(document).ready(function(){
         "color":"white",
     })
     $('i').css("color","white")
-    $('#html5').attr("src","/svg/html_white.svg")
+    $('#wordpress').attr("src","/svg/wordpress_white.svg")
     $('#bootstrap').attr("src","/svg/bootstrap_white.svg")
     $('#php').attr("src","/svg/php_white.svg")
     $('#mysql').attr("src","/svg/mysql_white.svg")
@@ -256,7 +242,9 @@ $(document).ready(function(){
     $('div.bg-dark').toggleClass("bg-dark bg-light")
     $('div').css("color","black")
     $('.proyectos').css("background-color","white")
-    $('#html5').attr("src","/svg/html5.svg")
+    $('i').css("color","black")
+    $('.dia').css("color","white")
+    $('#wordpress').attr("src","/svg/wordpress.svg")
     $('#bootstrap').attr("src","/svg/bootstrap.svg")
     $('#php').attr("src","/svg/php.svg")
     $('#mysql').attr("src","/svg/mysql.svg")
