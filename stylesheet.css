@@ -1,6 +1,15 @@
 .dropdown-menu .nav-link:hover {
     background-color: #343a40 !important;
   }
+  .perfiles_sociales{
+    width: 50%; /* Ajusta la altura para pantallas más pequeñas */
+    
+  }
+  @media(max-width: 550px) {
+    .perfiles_sociales{
+      width: 100%; /* Ajusta la altura para pantallas más pequeñas */
+    }
+  }
   .modal {
     display: none; 
     position: fixed; 

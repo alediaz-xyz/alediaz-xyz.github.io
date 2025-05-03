@@ -204,7 +204,7 @@ function closeModal() {
     $('#modal').hide()
 }
 function copiar(){
-    let texto = "alexdevrep@gmail.com"
+    let texto = "xyz.alediaz@gmail.com"
     navigator.clipboard.writeText(texto)
     $('.copiar').hide()
     $('.copyCheck').show()
