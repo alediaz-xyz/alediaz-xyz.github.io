@@ -5,6 +5,7 @@
     width: inherit; /* Ajusta la altura para pantallas más pequeñas */
     
   }
+
   @media(max-width: 550px) {
     .perfiles_sociales{
       width: 80%; /* Ajusta la altura para pantallas más pequeñas */
@@ -144,4 +145,12 @@ body.dark-mode .iconos img {
   height:15rem;
   width: 15rem;
   border: solid 3px #000
+}
+
+@media(max-width:768px){
+  .foto{
+    display: none;
+  
+  }
+  
 }
