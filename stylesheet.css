@@ -2,12 +2,12 @@
     background-color: #343a40 !important;
   }
   .perfiles_sociales{
-    width: 50%; /* Ajusta la altura para pantallas más pequeñas */
+    width: inherit; /* Ajusta la altura para pantallas más pequeñas */
     
   }
   @media(max-width: 550px) {
     .perfiles_sociales{
-      width: 100%; /* Ajusta la altura para pantallas más pequeñas */
+      width: 80%; /* Ajusta la altura para pantallas más pequeñas */
     }
   }
   .modal {
@@ -137,4 +137,11 @@ body.dark-mode .iconos img {
   width: 100%;
   height: 20rem; /* Ajusta la altura según sea necesario */
   object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+}
+
+.foto{
+  border-radius: 50%;
+  height:15rem;
+  width: 15rem;
+  border: solid 3px #000
 }
