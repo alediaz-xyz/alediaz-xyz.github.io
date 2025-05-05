@@ -6,7 +6,7 @@
 //Botón para ver el currículum
 $(document).ready(()=>{
     $("#view-cv").click(()=>{
-        window.open("./cv/Europass - Curriculum_Alejandro_Díaz_05_24.pdf", "_blank")
+        window.open("./cv/CV_Alejandro_Díaz.pdf", "_blank")
     })
 })
 
@@ -14,8 +14,8 @@ $(document).ready(()=>{
 $(document).ready(()=>{
     $("#download-cv").click(()=>{
         const link = document.createElement("a")
-        link.href="./cv/Europass - Curriculum_Alejandro_Díaz_05_24.pdf"
-        link.download="Europass - Curriculum_Alejandro_Díaz_05_24.pdf"
+        link.href="./cv/CV_Alejandro_Díaz.pdf"
+        link.download="CV_Alejandro_Díaz.pdf"
         link.click()
     })
 })

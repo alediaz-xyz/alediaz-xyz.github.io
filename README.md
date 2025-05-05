@@ -14,4 +14,4 @@ Puedes hacerme un PULL REQUEST o enviarme un mail al enlace que te dejo justo aq
 </br>
 debajo estaré encantado de leerte 😄
 </br>
-[![Email](https://img.shields.io/badge/alexdevrep@gmail.com-46ad3b?style=for-the-badge&logo=gmail&logoColor=white&labelColor=101010)](mailto:alexdevrep@gmail.com)
+[![Email](https://img.shields.io/badge/xyz.alediaz@gmail.com-46ad3b?style=for-the-badge&logo=gmail&logoColor=white&labelColor=101010)](mailto:xyz.alediaz@gmail.com)
